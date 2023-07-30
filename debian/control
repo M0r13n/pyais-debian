@@ -1,0 +1,18 @@
+Source: pyais
+Section: python
+Priority: extra
+Maintainer: Leon Morten Richter <github@leonmortenrichter.de>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               python3-attr,
+               python3-bitarray
+Standards-Version: 3.9.5
+Homepage: https://github.com/M0r13n/pyais
+
+Package: pyais
+Architecture: any
+Pre-Depends: dpkg (>= 1.16.1), python3 ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}, python3-attr, python3-bitarray
+Description: AIS message encoding and decoding in Python.
